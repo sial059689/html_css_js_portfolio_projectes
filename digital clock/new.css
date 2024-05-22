@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url('DC-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.newComp{
+   font-weight: lighter;
+   color: white;
+   /* text-align: center; */
+   font-size: 212px; 
+}
