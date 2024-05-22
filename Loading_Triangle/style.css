@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+}
+.triangle_1 {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: 50px solid transparent;
+  border-right: 50px solid white;
+  animation: triangle_1 2s infinite linear;
+  top: 0;
+  left: 0;
+}
+.triangle_2 {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: 50px solid transparent;
+  border-left: 50px solid white;
+  animation: triangle_2 2s infinite;
+}
+.triangle_3 {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: 50px solid transparent;
+  border-right: 50px solid white;
+  animation: triangle_1 2s infinite linear;
+  top: 0;
+  left: 0;
+}
+.triangle_4 {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: 50px solid transparent;
+  border-left: 50px solid white;
+  animation: triangle_2 2s infinite;
+}
+
+@keyframes triangle_1 {
+  0% {
+    transform: rotate(90deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(270deg);
+  }
+}
+@keyframes triangle_2 {
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(3600deg);
+  }
+  100% {
+    transform: rotate(540deg);
+  }
+}
